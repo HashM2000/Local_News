@@ -1,0 +1,44 @@
+
+<!doctype html>
+<link href="css/register.css" type="text/css" rel="stylesheet">
+<link href="css/homepage.css" type="text/css" rel="stylesheet">
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Local News - Create an Account</title>
+		<meta name="description" content="form to add new books">
+		<meta name="author" content="Mark Tyers">
+		<link href="style.css" type="text/css" rel="stylesheet" />
+	</head>
+	<body>
+	<div class="header">
+        <h1> LOCAL NEWS</h1>
+        <p>TOP NEWS</p>
+    </div>
+<div class="navbar">
+  <a href="/">HOME</a>
+  <a href="/business">BUSINESS</a>
+  <a href="/lifeandstyle">LIFE & STYLE</a>
+  <a href="/careers">CAREERS</a>
+  <a href="/sports">SPORTS</a>
+  <a href="/music">MUSIC</a>
+  <a href="/entertainment">ENTERTAINMENT</a>
+  <a href="/upload">UPLOAD</a>
+  <a href="/login" class="right"> &#128275; SIGN IN </a>
+  <a href="/search">SEARCH</a>
+</div>
+
+		<h1>Create an Account</h1>
+		<form class="main_body" action="/register" enctype="multipart/form-data" method="post">
+			<p>Username:<br /><input class="text_boxes" type="text" name="user" placeholder="your preferred username (no spaces)" value=""></p>
+            <p>Password:<br /><input class="text_boxes" type="password" name="pass" placeholder="your chosen password" value=""></p>
+			<p>Nationality:<br /><select class="nationality_box" name="country">
+				{{#each countries}}
+				<option value="{{this}}">{{this}}</option>
+				{{/each}}
+			</select></p>
+			<p>Profile Picture:<br /><input class="picture_box" type="file" name="avatar"></p>
+			<p><input class="button" type="submit" value="Create"></p>
+		</form>
+	</body>
+</html>

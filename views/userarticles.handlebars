@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link href="css/homepage.css" type="text/css" rel="stylesheet">
+        <link href="css/upload.css" type="text/css" rel="stylesheet">  
+        <title>Local News - User Articles</title>
+        <div class="header"> 
+            <h1> LOCAL NEWS</h1>
+            <p>TOP NEWS</p>
+        </div> 
+<div class="navbar">
+  <a href="/">HOME</a>
+  <a href="/business">BUSINESS</a>
+  <a href="/lifeandstyle">LIFE & STYLE</a>
+  <a href="/careers">CAREERS</a>
+  <a href="/sports">SPORTS</a>
+  <a href="/music">MUSIC</a>
+  <a href="/entertainment">ENTERTAINMENT</a>
+  <a href="/upload">UPLOAD</a>
+  <a href="/search">SEARCH</a>
+</div>
+
+</head>
+<body>
+		<center>
+			<br>
+	<header>
+		<h1>All User Articles</h1>
+	</header>
+	{{#each Article}}
+	<br>
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>{{this.Title}}</h2>
+      <h5>Created by: {{this.Userid}}</h5>
+      <h5>Date Posted: {{this.Date}}</h5>
+	  <h5>Category: {{this.Category}}</h5>
+      <img src="articles/{{this.Image}}.png" style="height:200px;">
+      <br>
+      <br>
+      <h3>Summary:</h3>
+      <p>{{this.Summary}}</p>
+	  <br>
+    <h3>Full Description:</h3>
+      <p>{{this.Comment}}</p>
+    </div>
+  </div>
+  {{/each}}
+	</center>
+</body>
+</html>

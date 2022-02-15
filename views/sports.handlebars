@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Local News - Sports</title>
+<link href="./css/sports.css" type="text/css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div class="navbar">
+  <a href="/">HOME</a>
+  <a href="/business">BUSINESS</a>
+  <a href="/lifeandstyle">LIFE & STYLE</a>
+  <a href="/careers">CAREERS</a>
+  <a href="/sports">SPORTS</a>
+  <a href="/music">MUSIC</a>
+  <a href="/entertainment">ENTERTAINMENT</a>
+  <a href="/upload">UPLOAD</a>
+  <a href="/logout" class="right">  LOGOUT &#129154;</a>
+  <a href="/search">SEARCH</a>
+</div>
+
+<div class="header">
+  <h1> SPORTS </h1>
+</div>
+
+<div class="sidenav">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="content">
+  <h2> &#9654 TOP SPORTS NEWS </h2>
+  
+</div>
+ <center>
+
+   	{{#each sports}}
+    <div class="card">
+    <div class="container">
+    <h2>{{this.Title}}</h2>
+    <h5>Created by: {{this.Userid}}</h5>
+	  <h5>Category: {{this.Category}}</h5>
+    <img src="articles/{{this.Image}}.png" style="height:200px;">
+    <p>Summary: {{this.Summary}}</p>
+	  <br>
+    <p>{{this.Comment}}</p>
+   
+    </div>
+    </div>
+
+  {{/each}}
+
+	</center>
+</body>

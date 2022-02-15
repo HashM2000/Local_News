@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link href="css/homepage.css" type="text/css" rel="stylesheet">  
+        <title>Local News - Search</title>
+        <div class="header"> 
+            <h1> LOCAL NEWS</h1>
+            <p>TOP NEWS</p>
+        </div> 
+          
+<div class="navbar">
+  <a href="/">HOME</a>
+  <a href="/business">BUSINESS</a>
+  <a href="/lifeandstyle">LIFE & STYLE</a>
+  <a href="/careers">CAREERS</a>
+  <a href="/sports">SPORTS</a>
+  <a href="/music">MUSIC</a>
+  <a href="/entertainment">ENTERTAINMENT</a>
+  <a href="/upload">UPLOAD</a>
+  <a href="/search">SEARCH</a>
+</div>
+
+    </head>
+	<body>
+				<h1>&nbsp;Local News - Search</h1>
+				<form action="/search" method="get">
+					&nbsp;&nbsp;<input type="text" name="q" value="{{query}}">
+					<input type="submit" value="Search">
+				</form>
+        <ol>
+		{{#if query}}
+    			<p>{{query}}</p>
+  		{{/if}}
+	    {{#each books}}
+	      <li>{{this.title}}</li>
+        <br>
+	    {{/each}}
+      </ol>
+      <br>
+      <br>
+      <ol>
+      <li><a href="https://www.bbc.co.uk/news/world-us-canada-50050467" target="_blank">Click Here</li></a>
+      <li><a href="https://www.caughtoffside.com/2019/09/23/robbed-and-rigged-these-fans-react-to-lionel-messi-landing-best-fifa-mens-player-2019-award/" target="_blank">Click Here</li></a>
+      <li><a href="https://www.youtube.com/watch?v=ClO8gQi8uK4" target="_blank">Click Here</li></a>
+      <li><a href="https://www.history.com/this-day-in-history/united-states-declares-end-to-iraq-war" target="_blank">Click Here</li></a>
+      <li><a href="https://www.bbc.co.uk/news/uk-50083026" target="_blank">Click Here</li></a>
+      <li><a href="http://baitag.com/index.php?newsid=385" target="_blank">Click Here</li></a>
+      <li><a href="https://www.irishtimes.com/opinion/boris-johnson-s-recklessness-may-now-pay-dividends-1.4054331" target="_blank">Click Here</li></a>
+      <li><a href="https://www.youtube.com/watch?v=9Auq9mYxFEE&feature=emb_title" target="_blank">Click Here</li></a>
+      <li><a href="/userarticles" target="_blank">Click Here</li></a>
+      <li><a href="/userarticles" target="_blank">Click Here</li></a>
+      </ol> 
+	</body>
+</html>

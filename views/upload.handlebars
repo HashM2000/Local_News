@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link href="css/homepage.css" type="text/css" rel="stylesheet">
+        <link href="css/upload.css" type="text/css" rel="stylesheet">  
+        <title>Local News - Upload Your Own Article!</title>
+        <div class="header"> 
+            <h1> LOCAL NEWS</h1>
+            <p>TOP NEWS</p>
+        </div> 
+          
+<div class="navbar">
+  <a href="/">HOME</a>
+  <a href="/business">BUSINESS</a>
+  <a href="/lifeandstyle">LIFE & STYLE</a>
+  <a href="/careers">CAREERS</a>
+  <a href="/sports">SPORTS</a>
+  <a href="/music">MUSIC</a>
+  <a href="/entertainment">ENTERTAINMENT</a>
+  <a href="/upload">UPLOAD</a>
+  <a href="/search">SEARCH</a>
+  <a href="/" class="avatar"><img src="avatars/{{user}}.png" width="45px" height="45px"><center> Welcome, {{user}} ! </center></a>
+  <a href="/logout" class="logout">  LOGOUT &#129154;</a>
+</div>
+
+</head>
+
+    <body>
+        <h1>Upload Article</h1>           
+            <form action="/upload" method="POST" enctype="multipart/form-data" class="Main_Body">
+                Username:<br>
+                <center><input  type="text" name="userid" value='{{user}}'  readonly class="Article_Boxes"></center><br>
+               
+                Category of your article:<br>
+                <select class="Category" name="category">
+                    <option value="Business">Business</option>
+                    <option value="Careers">Careers</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Life_And_Style">Life and Style</option>
+                    <option value="Music">Music</option>
+                    <option value="Sports">Sports</option>
+                    <option value="Other">Other</option>
+                </select><br>
+                Title of your article:<br>
+                <input type="text"  name='title' class="Article_Boxes"><br>
+                Short summary for article:<br>
+                <input type="text"  name='summary' class="Article_Boxes"><br>
+                Text for your article:<br>
+                <textarea type="text"  name="comment" class="Article_Text"></textarea><br>
+                <p>Article Image:<br /><input class="picture_box" type="file" name="picture"></p><br>
+                Image name (e.g. DonaldTrumpUKelection):<br>
+                <input type="text"  name='image' class="Article_Boxes"><br>
+                <input type='submit' class="button"><br>  
+            </form>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link href="css/homepage.css" type="text/css" rel="stylesheet">
+        <link href="css/upload.css" type="text/css" rel="stylesheet">  
+        <title>Local News - Upload Your Own Article!</title>
+        <div class="header"> 
+            <h1> LOCAL NEWS</h1>
+            <p>TOP NEWS</p>
+        </div> 
+          
+<div class="navbar">
+  <a href="/">HOME</a>
+  <a href="/business">BUSINESS</a>
+  <a href="/lifeandstyle">LIFE & STYLE</a>
+  <a href="/careers">CAREERS</a>
+  <a href="/sports">SPORTS</a>
+  <a href="/music">MUSIC</a>
+  <a href="/entertainment">ENTERTAINMENT</a>
+  <a href="/upload">UPLOAD</a>
+  <a href="/search">SEARCH</a>
+</div>
+
+</head>
+
+    <body>
+        <h1>Review</h1>           
+            <form action="/reviews" method="POST" class="Main_Body">
+                Name:<br>
+                <center><input  type="text" name="name" value='{{name}}' class="Article_Boxes" required></center><br>
+                Title:<br>
+                <center><input  type="text" name="rTitle" value='{{name}}' class="Article_Boxes" required></center><br>
+                How much do you give to this new:<br>
+                <select class="stars" name="stars" required>
+                    <option Select option disabled</option>
+                    <option value="1" >1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select><br>
+                
+               
+                Comment:<br>
+                <textarea type="text"  name="comment" class="Article_Text"></textarea><br>
+                <input type='submit' class="button"><br>  
+            </form>
+    </body>
+</html>

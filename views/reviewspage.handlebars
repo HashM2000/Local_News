@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link href="css/homepage.css" type="text/css" rel="stylesheet">
+        <link href="css/upload.css" type="text/css" rel="stylesheet">  
+        <title>Local News - Review Page</title>
+        <div class="header"> 
+            <h1> LOCAL NEWS</h1>
+            <p>TOP NEWS</p>
+        </div> 
+<div class="navbar">
+  <a href="/">HOME</a>
+  <a href="/business">BUSINESS</a>
+  <a href="/lifeandstyle">LIFE & STYLE</a>
+  <a href="/careers">CAREERS</a>
+  <a href="/sports">SPORTS</a>
+  <a href="/music">MUSIC</a>
+  <a href="/entertainment">ENTERTAINMENT</a>
+  <a href="/upload">UPLOAD</a>
+  <a href="/search">SEARCH</a>
+  
+</div>
+<body>
+  <section>
+    <center><h3 style="text-align:center; color:#00001a;" class="Article_Boxes"> Reviews </h3></center>
+          
+    {{#each review}} 
+    <table>
+    <tr>
+    <th><h5>Title: {{this.rTitle}}</h5> 
+        <h6>Rating: {{this.Stars}}</h6>
+        <h6  type="text" name="Name"  class="Article_Boxes"> Created by : {{this.Name}}<br>
+    </th>
+    <th><h6> Commentary : {{this.comment}}</h6></th>
+    <tr>
+
+    <br>
+    <br>
+
+    </table>
+           
+
+
+    {{/each}}
+        
+</section>
+</body>
+</head>
+</html>

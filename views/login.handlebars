@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/log_in.css" type="text/css" rel="stylesheet">
+    <link href="css/homepage.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local News - Log In</title>
+</head>
+<body>
+    <div class="header">
+        <h1> LOCAL NEWS</h1>
+        <p>TOP NEWS</p>
+    </div>
+<div class="navbar">
+  <a href="/">HOME</a>
+  <a href="/business">BUSINESS</a>
+  <a href="/lifeandstyle">LIFE & STYLE</a>
+  <a href="/careers">CAREERS</a>
+  <a href="/sports">SPORTS</a>
+  <a href="/music">MUSIC</a>
+  <a href="/entertainment">ENTERTAINMENT</a>
+  <a href="/upload">UPLOAD</a>
+  <a href="/register" class="right"> &#128273; REGISTER </a>
+  <a href="/search">SEARCH</a>
+</div>
+
+    <div class="main_body">
+        <h1>Sign In</h1>
+        <div class="container">
+			<form action="/login" method="post">
+			{{#if msg}}
+ 					<p class="msg">{{msg}}</p>
+			{{/if}}
+            <label for="username">
+                <b>Username</b>
+            </label>
+            <input class="input" type="text" name="user" placeholder="your username" value="{{user}}" autofocus>
+			<br>
+			<br>
+            <label for="password">
+                <b>Password</b>
+            </label>
+            <input class="input" type="password" name="pass" placeholder="your password" value="">
+            <br>
+			<br>
+            <button class="button">Login</button>
+			<br>
+			<br>
+            <label>
+                <input class="input" type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+			<br>
+			<br>
+			<a href="/register">Not registered yet? Click here to sign up!</a>
+		  </form>
+        </div>
+
+
+
+
+
+
+    </div>
+       
+
+              
+</body>

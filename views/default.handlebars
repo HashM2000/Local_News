@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Local News - Home</title>
+<link href="./css/homepage.css" type="text/css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="header">
+  <h1> LOCAL NEWS</h1>
+  <p>TOP NEWS</p>
+</div> 
+
+<div class="navbar">
+  <a href="/">HOME</a>
+  <a href="/business">BUSINESS</a>
+  <a href="/lifeandstyle">LIFE & STYLE</a>
+  <a href="/careers">CAREERS</a>
+  <a href="/sports">SPORTS</a>
+  <a href="/music">MUSIC</a>
+  <a href="/entertainment">ENTERTAINMENT</a>
+  <a href="/upload">UPLOAD</a>
+  <a href="/login" class="right"> &#128275; SIGN IN </a>
+  <a href="/search">SEARCH</a>
+</div>
+
+<br>
+<marquee behavior="scroll" direction="left">
+<h3 class="float">&nbsp;Welcome to Local News, here you can find the latest news, updates and news related to other categories. If you are not signed up click the 'sign in' button and get registered today to get the latest news!</h3></marquee>
+<br>
+
+<h2 style="text-align:center; color:#00001a;"> <a href="/live">WATCH LIVE NOW &#9654 </h2></a>
+<div class="row">
+  <div class="side">
+  </div>
+  <div class="main">
+    <div class="column" style="background-color:#fff4ff;">
+      <img src="images/firstnew.jpg" alt="Avatar" class="image" style="width:100%;height:300px;">
+      <font size="5px"><a href="https://www.bbc.co.uk/news/world-us-canada-50050467" >British holidaymakers 'traumatised' after arrest at US border </a>
+    </div>
+
+    <div class="column" style="background-color:#fff4ff;">
+      <img src="images/secondnew.jpg" alt="Avatar" class="image" style="width:100%;height:300px;">
+      <a href="https://www.caughtoffside.com/2019/09/23/robbed-and-rigged-these-fans-react-to-lionel-messi-landing-best-fifa-mens-player-2019-award/" >Lionel Messi landing Best FIFA Men’s Player 2019 award</a>
+    </div>
+
+    <div class="column" style="background-color:#fff4ff;">
+      <img src="images/thirdnew.jpg" alt="Avatar" class="image" style="width:100%;height:300px;">
+      <a href="https://www.youtube.com/watch?v=ClO8gQi8uK4" >Fans react to the racism in the Bulgaria </a>
+    </div>
+
+<hr>
+<hr>
+
+    <div class="row1">
+      <div class="column1">
+        <img src="images/new4.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column1">
+        <img src="images/new5.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column1">
+        <img src="images/new6.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+      <div class="column1">
+        <img src="images/new7.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="images/new4img.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="images/new5img.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="images/new6img.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="images/new7img.jpg" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <div class="column1">
+          <a href="https://www.history.com/this-day-in-history/united-states-declares-end-to-iraq-war">
+            <img class="demo" src="/images/new4.jpg" onclick="currentSlide(1)" alt="Nature">
+          </a>
+        </div>
+
+        <div class="column1">
+          <a href="https://www.bbc.co.uk/news/uk-50083026">
+            <img class="demo" src="/images/new5.jpg" onclick="currentSlide(2)" alt="Snow">
+          </a>
+        </div>
+
+        <div class="column1">
+          <a href="http://baitag.com/index.php?year=2019&month=10&day=18">
+            <img class="demo" src="/images/new6.jpg" onclick="currentSlide(3)" alt="Mountains">
+          </a>
+        </div>
+
+        <div class="column1">
+          <a href="https://www.irishtimes.com/opinion/boris-johnson-s-recklessness-may-now-pay-dividends-1.4054331">
+            <img class="demo" src="/images/new7.jpg" onclick="currentSlide(4)" alt="Lights">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+  <br>
+  <center><a href="/userarticles"><h6> Click here to read all user articles </h6></a></center>
+  <br>
+    <br>
+  <center><a href="/reviewspage"><h6> Click here to read our reviews </h6></a></center>
+  <br>      
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+// Close the Modal
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+var slideIndex = 1;
+showSlides(slideIndex);
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+  <section>
+    <h3 style="text-align:center; color:#00001a;" class="Article_Boxes"> User Articles </h3>
+
+
+    {{#each Article}} 
+    <table>
+    <tr>
+    <th><h5>Title: {{this.Title}}</h5> 
+    <img src="articles/{{this.Image}}.png" width="300px" height="200px">
+    <h6  type="text" name="Name"  class="Article_Boxes"> Created by: {{this.Userid}}<br>
+    </th>
+    <th><h6> Summary:<br><br> {{this.Summary}}</h6></th>
+    <tr>
+
+    <br>
+    <br>
+
+    </table>
+           
+
+
+    {{/each}}
+        
+</section>
+
+       
+<br>
+<br>
+<br>
+
+
+<footer id="mobile-footer" >
+  <div id="mobile-menu">
+    <div id="mobile-footer-container">
+      <div class="mobile-link">
+        <a href="/reviews" class="text-center">Reviews</a>
+      </div>
+      <div class="mobile-link">
+        <a href="/contact" class="text-center">Contact Us</a>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-footer-close">
+    <button id="mobile-footer-btn">
+      <div class="mobile-btn-close is-rotating-back">
+        <span></span>
+      </div>
+    </button>
+  </div>
+</footer>
