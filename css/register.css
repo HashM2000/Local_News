@@ -1,0 +1,53 @@
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main_body{
+    text-align: center;
+    padding-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.button{
+    background-color: #000033;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    -webkit-transition-duration: 1s;
+  }
+
+.button:hover{
+    background-color: black;
+  }
+
+  .text_boxes{
+    border-radius: 30px;
+    border-color: #000033;
+    border-width: 2px;
+    width: 300px;
+    height: 30px;
+    margin-top: 0.1cm;
+    margin-bottom: 0.1cm;
+    text-align: center;
+    background: linear-gradient(to bottom left, #ffcccc 0%, #99ffcc 100%);
+  }
+  .nationality_box{
+    border-radius: 30px;
+    border-color: #000033;
+    border-width: 2px;
+    width: 80px;
+    height: 30px;
+    margin-top: 0.1cm;
+    margin-bottom: 0.1cm;
+    text-align: center;
+    background: linear-gradient(to bottom left, #ffcccc 0%, #99ffcc 100%);
+  }
+
+  .picture_box{
+      margin-top: 20px;
+      margin-left: 50px;
+  }

@@ -1,0 +1,93 @@
+.navbar {
+  overflow: hidden;
+  background-color: #000033;
+ 
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  
+}
+
+.navbar a.right {
+  float: right;
+  
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+  padding: 2px 16px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+.header {
+  text-align: center;
+  background: linear-gradient(to bottom, #ff6600 0%, #ffff00 100%);
+  color: #000033;
+  
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffff99
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url(/images/business.png);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  margin-top: 49px;
+  
+}
+
+
+.sidenav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+
+  
+}
+
+.sidenav a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+.content {
+  margin-left: 200px;
+  padding-left: 20px;
+  color:  #000033;
+}
